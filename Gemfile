@@ -13,6 +13,18 @@ gemspec
 # To use debugger
 # gem 'debugger'
 
+gem 'rails', '~> 4.0.1'
+
+gem 'mongoid', '4.0.0.beta1'
+gem 'haml-rails'
+gem 'sass-rails'
+gem 'mongoid_acts_as_page'
+gem 'mongoid_orderable'
+gem 'mongoid_slug'
+
+gem 'activeadmin',         github: 'gregbell/active_admin', ref: '65aae6b68e78aad3071b2f85242b19fd3fccf426'
+gem 'activeadmin-mongoid', github: 'elia/activeadmin-mongoid', branch: 'rails4'
+
 group :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
