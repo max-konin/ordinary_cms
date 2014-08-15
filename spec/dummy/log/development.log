@@ -1553,3 +1553,104 @@ ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
   Rendered /home/max/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
   Rendered /home/max/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
   Rendered /home/max/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.0.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.0ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2014-08-15 17:52:00 +0700
+Processing by Admin::DashboardController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6101ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=admin_users selector={"$query"=>{"_id"=>BSON::ObjectId('53ede04f6d6178583d000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.5330ms
+  Rendered /home/max/.rvm/gems/ruby-2.0.0-p451/bundler/gems/active_admin-65aae6b68e78/app/views/active_admin/page/index.html.arb (19.4ms)
+Completed 200 OK in 107ms (Views: 22.6ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-08-15 17:52:00 +0700
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-08-15 17:52:00 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-08-15 17:52:00 +0700
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2014-08-15 17:52:00 +0700
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2014-08-15 17:52:00 +0700
+
+
+Started GET "/assets/jquery.ui.button.js?body=1" for 127.0.0.1 at 2014-08-15 17:52:00 +0700
+
+
+Started GET "/assets/jquery.ui.draggable.js?body=1" for 127.0.0.1 at 2014-08-15 17:52:00 +0700
+
+
+Started GET "/assets/jquery.ui.resizable.js?body=1" for 127.0.0.1 at 2014-08-15 17:52:00 +0700
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2014-08-15 17:52:00 +0700
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2014-08-15 17:52:00 +0700
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-08-15 17:52:00 +0700
+
+
+Started GET "/assets/jquery.ui.dialog.js?body=1" for 127.0.0.1 at 2014-08-15 17:52:00 +0700
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2014-08-15 17:52:00 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-08-15 17:52:00 +0700
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-08-15 17:52:00 +0700
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-08-15 17:52:00 +0700
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-08-15 17:52:00 +0700
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-08-15 17:52:00 +0700
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-08-15 17:52:00 +0700
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-08-15 17:52:00 +0700
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-08-15 17:52:00 +0700
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-08-15 17:52:00 +0700
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-08-15 17:52:00 +0700
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-08-15 17:52:00 +0700
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-08-15 17:52:00 +0700
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-08-15 17:52:00 +0700
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 183.1465ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=ordinary_cms_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 72.7998ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_development command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 28.6984ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_development command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 0.4158ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dummy_development collection=ordinary_cms_pages selector={"position"=>{"$gte"=>1}} update={"$inc"=>{"position"=>1}} flags=[:multi]
+                         COMMAND      database=dummy_development command={:getlasterror=>1, :w=>1} runtime: 143.0760ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=ordinary_cms_pages selector={"_slugs"=>{"$all"=>[/^page\-1(?:-(\d+))?$/]}, "_id"=>{"$ne"=>BSON::ObjectId('53ededc66d61786144000000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 27.6365ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_development collection=ordinary_cms_pages documents=[{"_id"=>BSON::ObjectId('53ededc66d61786144000000'), "text"=>"", "_slugs"=>["page-1"], "name"=>"page-1", "position"=>1, "seo"=>{"_id"=>BSON::ObjectId('53ededc66d61786144010000'), "title"=>"page-1", "description"=>"", "keywords"=>""}}] flags=[]
+                         COMMAND      database=dummy_development command={:getlasterror=>1, :w=>1} runtime: 234.7907ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dummy_development collection=ordinary_cms_pages selector={"_id"=>BSON::ObjectId('53ededc66d61786144000000')} update={"$push"=>{"sections"=>{"_id"=>BSON::ObjectId('53ededd56d61786144020000'), "name"=>"1"}}} flags=[]
+                         COMMAND      database=dummy_development command={:getlasterror=>1, :w=>1} runtime: 23.2727ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dummy_development collection=ordinary_cms_pages selector={"_id"=>BSON::ObjectId('53ededc66d61786144000000')} update={"$push"=>{"sections"=>{"_id"=>BSON::ObjectId('53ededd86d61786144030000'), "name"=>"2"}}} flags=[]
+                         COMMAND      database=dummy_development command={:getlasterror=>1, :w=>1} runtime: 0.7574ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.0983ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_development collection=ordinary_cms_pages selector={"$query"=>{}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.5506ms
