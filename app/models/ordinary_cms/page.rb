@@ -7,7 +7,8 @@ module OrdinaryCms
     accepts_nested_attributes_for :sections
 
     def section(name)
-      sections.find_by name: name
+      sections.where(name: name).first
     end
+
   end
 end

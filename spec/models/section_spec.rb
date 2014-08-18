@@ -7,4 +7,24 @@ describe OrdinaryCms::Section do
     section = page.sections.new name: 'name'
     expect(section.valid?).to eq(false)
   end
+
+  describe '.render' do
+    let (:section) {(FactoryGirl.create :page).sections.build name: 'sec1', alias: 'sec', content: '<p>content<\p>'}
+
+    context 'pass :alias' do
+      subject {section.render :alias}
+      it {should eq("<span data-mercury=\"simple\">sec</span>")}
+    end
+
+    context 'pass :content' do
+      subject {section.render :content}
+      it {should eq("<div data-mercury=\"full\"><p>content<\\p></div>")}
+    end
+
+    context 'pass nothing' do
+      subject {section.render}
+      it {should eq("<div data-mercury=\"full\"><p>content<\\p></div>")}
+    end
+
+  end
 end

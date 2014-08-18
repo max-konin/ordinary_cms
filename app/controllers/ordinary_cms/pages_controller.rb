@@ -3,17 +3,17 @@ require_dependency "ordinary_cms/application_controller"
 module OrdinaryCms
   class PagesController < ApplicationController
     before_action :set_page, only: [:show, :update]
+    before_action ActiveAdmin.application.authentication_method, only: :update
 
-    def show
-    end
+    def show; end
 
-    # PATCH/PUT /pages/1
     def update
-      if @page.update(page_params)
-        redirect_to @page, notice: 'Page was successfully updated.'
-      else
-        render :edit
+      sections_keys = params[:content].keys - [:undefined]
+      sections_keys.each do |key|
+        section = @page.section(key)
+        section.update_attributes content: params[:content][key][:value] unless section.nil?
       end
+      render text: ''
     end
 
     private

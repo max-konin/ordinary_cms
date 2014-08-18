@@ -11,5 +11,9 @@ describe OrdinaryCms::Page do
     it 'return section by name' do
       expect(@page.section '1').to eq(@page.sections.find_by name: '1')
     end
+
+    it 'return nil if section not found' do
+      expect(@page.section 'notfound').to be_nil
+    end
   end
 end

@@ -7,6 +7,7 @@ ActiveAdmin.register OrdinaryCms::Page do
 
   end
 
+
   index do
     selectable_column
     column :name
@@ -33,6 +34,8 @@ ActiveAdmin.register OrdinaryCms::Page do
       s.input :description
       s.input :keywords
     end
+
+    f.actions
   end
 
 end
