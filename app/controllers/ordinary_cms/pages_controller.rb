@@ -5,7 +5,9 @@ module OrdinaryCms
     before_action :set_page, only: [:show, :update]
     before_action ActiveAdmin.application.authentication_method, only: :update
 
-    def show; end
+    def show
+      request.subdomain
+    end
 
     def update
       sections_keys = params[:content].keys - [:undefined]

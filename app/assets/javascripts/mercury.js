@@ -4,7 +4,7 @@
  *
  * Minimum jQuery requirements are 1.7
  *= require_self
- *
+ *= require jquery
  * You can include the Rails jQuery ujs script here to get some nicer behaviors in modals, panels and lightviews when
  * using :remote => true within the contents rendered in them.
  * require jquery_ujs
