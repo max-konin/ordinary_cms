@@ -3,8 +3,9 @@ ActiveAdmin.register OrdinaryCms::Page do
   permit_params :name, seo_attributes: [ :id, :title, :description, :keywords ],
                 sections_attributes: [:id, :name, :text, :_destroy]
 
-  member_action :mercury_update, method: :put do
-
+  member_action :set_as_root, method: :patch do
+    OrdinaryCms::Page.find(params[:id]).set_as_root!
+    redirect_to :back
   end
 
 
@@ -13,8 +14,10 @@ ActiveAdmin.register OrdinaryCms::Page do
     column :name
     column do |page|
         link_to t('edit_content'),
-                "/editor#{ordinary_cms.page_path(page)}",
-                data: {save_url: mercury_update_admin_ordinary_cms_page_path(page)}
+                "/editor#{ordinary_cms.page_path(page)}"
+    end
+    column do |page|
+      link_to t(:set_as_root), set_as_root_admin_ordinary_cms_page_path(page), {method: :patch} unless page.root?
     end
     default_actions
   end

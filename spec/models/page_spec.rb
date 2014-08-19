@@ -16,4 +16,23 @@ describe OrdinaryCms::Page do
       expect(@page.section 'notfound').to be_nil
     end
   end
+
+  describe '#set_as_root' do
+    before :each do
+      @old_root = FactoryGirl.create :page, root: true
+      @new_root = FactoryGirl.create :page
+    end
+
+    it 'return true' do
+      expect(@new_root.set_as_root!).to be_truthy
+    end
+
+    it 'set @new_root as root' do
+      expect {@new_root.set_as_root!}.to change{@new_root.reload.root?}.from(false).to(true)
+    end
+
+    it 'set @new_root as not root' do
+      expect {@old_root.set_as_root!}.to change{@old_root.reload.root?}.from(true).to(false)
+    end
+  end
 end

@@ -1,5 +1,6 @@
 ru:
   edit_content: Редактировать стариницу
+  set_as_root: Установить главной
 
   mongoid: &mongoid
     models:

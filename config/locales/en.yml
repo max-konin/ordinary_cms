@@ -1,6 +1,6 @@
 en:
   edit_content: Edit content
-
+  set_as_root: Set as Root
   mongoid: &mongoid
     models:
       ordinary_cms/page:
