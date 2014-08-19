@@ -1,0 +1,19 @@
+en:
+  edit_content: Edit content
+
+  mongoid: &mongoid
+    models:
+      ordinary_cms/page:
+        one:   Page
+        other: Pages
+      ordinary_cms/section:
+        one:   Section
+        other: Sections
+
+    attributes:
+      ordinary_cms/page:
+        name: Name
+      ordinary_cms/section:
+        name: Name
+        alias: Alias
+        content: Content

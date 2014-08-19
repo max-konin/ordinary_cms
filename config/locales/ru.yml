@@ -1,0 +1,23 @@
+ru:
+  edit_content: Редактировать стариницу
+
+  mongoid: &mongoid
+    models:
+      ordinary_cms/page:
+        one:   Страница
+        few:   Страницы
+        many:  Страниц
+        other: Страницы
+      ordinary_cms/section:
+        one:   Раздел
+        few:   Раздела
+        many:  Разделов
+        other: Разделы
+
+    attributes:
+      ordinary_cms/page:
+        name: Имя
+      ordinary_cms/section:
+        name: Имя
+        alias: Псевдоним
+        content: Контент
