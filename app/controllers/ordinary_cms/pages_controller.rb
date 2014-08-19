@@ -1,12 +1,14 @@
 require_dependency "ordinary_cms/application_controller"
-
+require_dependency 'ordinary_cms/concerns/smart_pages_render'
 module OrdinaryCms
   class PagesController < ApplicationController
+    include SmartPagesRender
+
     before_action :set_page, only: [:show, :update]
     before_action ActiveAdmin.application.authentication_method, only: :update
 
     def show
-      request.subdomain
+      smart_render(@page.name)
     end
 
     def update

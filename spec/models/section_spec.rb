@@ -18,12 +18,12 @@ describe OrdinaryCms::Section do
 
     context 'pass :content' do
       subject {section.render :content}
-      it {should eq("<div data-mercury=\"full\"><p>content<\\p></div>")}
+      it {should eq( "<div class=\"section\" data-mercury=\"full\" id=\"sec1\"><p>content<\\p></div>")}
     end
 
     context 'pass nothing' do
       subject {section.render}
-      it {should eq("<div data-mercury=\"full\"><p>content<\\p></div>")}
+      it {should eq( "<div class=\"section\" data-mercury=\"full\" id=\"sec1\"><p>content<\\p></div>")}
     end
 
   end
