@@ -16,7 +16,7 @@ describe Admin::OrdinaryCmsPagesController do
 
   describe 'POST create' do
     context 'with factory' do
-      let(:valid_params) {{name: 'page-1', factory: @factory}}
+      let(:valid_params) {{name: 'page-1', factory_id: @factory}}
       before :each do
         @factory = FactoryGirl.create :page_factory
       end

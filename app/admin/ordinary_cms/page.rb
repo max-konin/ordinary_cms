@@ -11,8 +11,8 @@ ActiveAdmin.register OrdinaryCms::Page do
   controller do
     protected
       def build_resource
-        return super if params[:ordinary_cms_page].blank? || params[:ordinary_cms_page][:factory].blank?
-        factory = OrdinaryCms::Factories::Page.find params[:ordinary_cms_page].delete(:factory)
+        return super if params[:ordinary_cms_page].blank? || params[:ordinary_cms_page][:factory_id].blank?
+        factory = OrdinaryCms::Factories::Page.find params[:ordinary_cms_page].delete(:factory_id)
         factory.build resource_params.first
       end
   end
