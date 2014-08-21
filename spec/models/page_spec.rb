@@ -35,4 +35,24 @@ describe OrdinaryCms::Page do
       expect {@old_root.set_as_root!}.to change{@old_root.reload.root?}.from(true).to(false)
     end
   end
+
+  describe '.matches?' do
+    let(:factory) {FactoryGirl.create :page_factory}
+
+    it 'return true if page has all section such as in factory' do
+      page = factory.build
+      expect(page.matches? factory).to be_truthy
+    end
+
+    it 'return false else' do
+      page = FactoryGirl.create :page
+      expect(page.matches? factory).to be_falsey
+    end
+
+    it 'raise ArgumentError if passed not factory' do
+      page = FactoryGirl.create :page
+      expect{page.matches? Object.new}.to raise_error(ArgumentError)
+    end
+
+  end
 end

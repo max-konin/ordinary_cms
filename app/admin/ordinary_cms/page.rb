@@ -8,6 +8,14 @@ ActiveAdmin.register OrdinaryCms::Page do
     redirect_to :back
   end
 
+  controller do
+    protected
+      def build_resource
+        return super if params[:ordinary_cms_page].blank? || params[:ordinary_cms_page][:factory].blank?
+        factory = OrdinaryCms::Factories::Page.find params[:ordinary_cms_page].delete(:factory)
+        factory.build resource_params.first
+      end
+  end
 
   index do
     selectable_column
@@ -25,6 +33,7 @@ ActiveAdmin.register OrdinaryCms::Page do
   form do |f|
     f.inputs do
       f.input :name
+      f.input :factory, as: :select, collection: OrdinaryCms::Factories::Page.all.collect {|f| [f.name,f.id]}
       f.has_many :sections, allow_destroy: true do |section|
         section.input :name
         section.input :alias

@@ -5,6 +5,8 @@ module OrdinaryCms
 
     field :root, type: Boolean, default: false
 
+    belongs_to :factory, class_name: 'OrdinaryCms::Factories::Page'
+
     embeds_many :sections, class_name: 'OrdinaryCms::Section'
     accepts_nested_attributes_for :sections
 
@@ -15,6 +17,14 @@ module OrdinaryCms
     def set_as_root!
       Page.where(root: true).update_all root: false
       self.update_attributes! root: true
+    end
+
+    def matches?(factory)
+      raise ArgumentError, 'Argument is not OrdinaryCms::Factories::Page' unless factory.is_a? Factories::Page
+      factory.sections.each do |s|
+        return false if self.sections.where(name: s.name).empty?
+      end
+      true
     end
   end
 end

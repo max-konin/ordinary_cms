@@ -8,8 +8,8 @@ module OrdinaryCms
       embeds_many :sections, class_name: 'OrdinaryCms::Factories::Section'
       validates :name, presence: true, uniqueness: true
 
-      def build
-        page = OrdinaryCms::Page.new name: name
+      def build(params = {})
+        page = OrdinaryCms::Page.new params
         sections.each {|s| page.sections << s.build}
         page
       end

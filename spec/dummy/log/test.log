@@ -2419,3 +2419,1279 @@ Completed 404 Not Found in 5ms
                          COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.4467ms
   MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
                          COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.4255ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.1010ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 155.0980ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 97.7459ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 10.3412ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4750ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.3448ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.3331ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.0929ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7712ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.5172ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.0604ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.4842ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.4143ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.3348ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4416ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.3977ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.3036ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 42.6547ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_factories_pages documents=[{"_id"=>BSON::ObjectId('53f58e916d61785e53000000'), "name"=>"page-1", "sections"=>[{"_id"=>BSON::ObjectId('53f58e916d61785e53010000'), "name"=>"section-1", "alias"=>"section-1"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 142.1750ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6430ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7250ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 81.7357ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.6803ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 59.4936ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 0.4343ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dummy_test collection=ordinary_cms_pages selector={"position"=>{"$gte"=>1}} update={"$inc"=>{"position"=>1}} flags=[:multi]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 26.6648ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"_slugs"=>{"$all"=>[/^page\-1(?:-(\d+))?$/]}, "_id"=>{"$ne"=>BSON::ObjectId('53f58e926d61785e53020000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 75.4902ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_pages documents=[{"_id"=>BSON::ObjectId('53f58e926d61785e53020000'), "text"=>"some text", "_slugs"=>["page-1"], "root"=>false, "name"=>"page-1", "position"=>1, "seo"=>{"_id"=>BSON::ObjectId('53f58e926d61785e53030000'), "title"=>nil, "description"=>"", "keywords"=>""}}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.8122ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-2"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.4674ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_factories_pages documents=[{"_id"=>BSON::ObjectId('53f58e926d61785e53040000'), "name"=>"page-2", "sections"=>[{"_id"=>BSON::ObjectId('53f58e926d61785e53050000'), "name"=>"section-2", "alias"=>"section-2"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.4588ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 66.2881ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.5946ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.3359ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"name"=>"page-2"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.4550ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 0.5997ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 1.1674ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dummy_test collection=ordinary_cms_pages selector={"position"=>{"$gte"=>1}} update={"$inc"=>{"position"=>1}} flags=[:multi]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.8085ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"_slugs"=>{"$all"=>[/^page\-2(?:-(\d+))?$/]}, "_id"=>{"$ne"=>BSON::ObjectId('53f58e926d61785e53060000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7862ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_pages documents=[{"_id"=>BSON::ObjectId('53f58e926d61785e53060000'), "text"=>"some text", "_slugs"=>["page-2"], "root"=>false, "name"=>"page-2", "position"=>1, "seo"=>{"_id"=>BSON::ObjectId('53f58e926d61785e53070000'), "title"=>nil, "description"=>"", "keywords"=>""}}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.8198ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8245ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6850ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.3048ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.2466ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7607ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6711ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.5661ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 1.3510ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f58fe46d61785ed3000000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$bGMnEODpr8CZf4Mm2wtMHufF80KmfNlnpr5u3xYUW74hzFEIX1n3q", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 40.3551ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7902ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.3975ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.2896ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 17.6387ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.5877ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f58fe46d61785ed3010000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$kvSHF1E6uJKwf8RpRGREm.9kx63d9lxpCBnNX.JguCvDEdFWzCEX.", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.8277ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9013ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.4661ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.5045ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6900ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.1453ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5765ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.5453ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.3980ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.2857ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.5839ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f58ff56d61785ee1000000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$Q4K2/zFBBkNxoXo6/SqREOy64r8mSODK8dIfWfBHDQ5nb9ylCRZpu", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7301ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.5040ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_factories_pages documents=[{"_id"=>BSON::ObjectId('53f58ff56d61785ee1010000'), "name"=>"page-1", "sections"=>[{"_id"=>BSON::ObjectId('53f58ff56d61785ee1020000'), "name"=>"section-1", "alias"=>"section-1"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6932ms
+Processing by Admin::OrdinaryCmsPagesController#create as HTML
+  Parameters: {"page"=>{"name"=>"page-1", "factory"=>"53f58ff56d61785ee1010000"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"$query"=>{"_id"=>BSON::ObjectId('53f58ff56d61785ee1000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 20.8807ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"_id"=>BSON::ObjectId('53f58ff56d61785ee1010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5976ms
+Unpermitted parameters: page
+Completed 500 Internal Server Error in 49ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6912ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.4003ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.4422ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 4.9321ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.5756ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f58ff56d61785ee1030000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$b.lQWdhi.udUb0qDfKKU3ObtF9oKJj3QDuXXMXdHzOclp0RZoumZm", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.3090ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-2"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.5135ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_factories_pages documents=[{"_id"=>BSON::ObjectId('53f58ff56d61785ee1040000'), "name"=>"page-2", "sections"=>[{"_id"=>BSON::ObjectId('53f58ff56d61785ee1050000'), "name"=>"section-2", "alias"=>"section-2"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 15.8465ms
+Processing by Admin::OrdinaryCmsPagesController#create as HTML
+  Parameters: {"page"=>{"name"=>"page-1", "factory"=>"53f58ff56d61785ee1040000"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"$query"=>{"_id"=>BSON::ObjectId('53f58ff56d61785ee1030000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.7182ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"_id"=>BSON::ObjectId('53f58ff56d61785ee1040000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5416ms
+Unpermitted parameters: page
+Completed 500 Internal Server Error in 6ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8324ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 3.6443ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.6702ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.3800ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.6862ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7375ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6878ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.5970ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6411ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.6984ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f590526d61785f1c000000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$SJpuZiUmwNt7aWMxg4Inf.52lQAr3h4TqnHWDT9eBEFTgkwto30JG", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.0262ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.6929ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_factories_pages documents=[{"_id"=>BSON::ObjectId('53f590526d61785f1c010000'), "name"=>"page-1", "sections"=>[{"_id"=>BSON::ObjectId('53f590526d61785f1c020000'), "name"=>"section-1", "alias"=>"section-1"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.1751ms
+Processing by Admin::OrdinaryCmsPagesController#create as HTML
+  Parameters: {"page"=>{"name"=>"page-1", "factory"=>"53f590526d61785f1c010000"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"$query"=>{"_id"=>BSON::ObjectId('53f590526d61785f1c000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.8132ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"_id"=>BSON::ObjectId('53f590526d61785f1c010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9753ms
+Unpermitted parameters: page
+Completed 500 Internal Server Error in 18094ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.4803ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.8632ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7500ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6882ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.7476ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f590646d61785f1c030000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$eJth76OTxo4fp7hsY3J.o.VX81Fv/vYB33uW/yKjqK6u/v1.D9D/y", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.3762ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-2"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.6124ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_factories_pages documents=[{"_id"=>BSON::ObjectId('53f590646d61785f1c040000'), "name"=>"page-2", "sections"=>[{"_id"=>BSON::ObjectId('53f590646d61785f1c050000'), "name"=>"section-2", "alias"=>"section-2"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.8799ms
+Processing by Admin::OrdinaryCmsPagesController#create as HTML
+  Parameters: {"page"=>{"name"=>"page-1", "factory"=>"53f590646d61785f1c040000"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"$query"=>{"_id"=>BSON::ObjectId('53f590646d61785f1c030000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.8476ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"_id"=>BSON::ObjectId('53f590646d61785f1c040000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8322ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.4792ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7135ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7041ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6442ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6798ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.8156ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f5906b6d61785f38000000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$fYeQKFnuL/1/9eP6IGQPk.kdcKHEraJtUTsRJoO2YIVahfv1p/gc.", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 11.3678ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.7138ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_factories_pages documents=[{"_id"=>BSON::ObjectId('53f5906b6d61785f38010000'), "name"=>"page-1", "sections"=>[{"_id"=>BSON::ObjectId('53f5906b6d61785f38020000'), "name"=>"section-1", "alias"=>"section-1"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.0508ms
+Processing by Admin::OrdinaryCmsPagesController#create as HTML
+  Parameters: {"page"=>{"name"=>"page-1", "factory"=>"53f5906b6d61785f38010000"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"$query"=>{"_id"=>BSON::ObjectId('53f5906b6d61785f38000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.8021ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"_id"=>BSON::ObjectId('53f5906b6d61785f38010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8816ms
+Unpermitted parameters: page
+Completed 500 Internal Server Error in 52308ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.3261ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.8992ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7764ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7215ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.7921ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.4914ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7741ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.3430ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.5966ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6218ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.6835ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f590af6d61785f70000000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$eUoJDKIpC0f5FfJ1Bh0FYOmvJIkT/VICoM.LcNg7JvXbzbMmwruz.", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.9868ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.7440ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_factories_pages documents=[{"_id"=>BSON::ObjectId('53f590af6d61785f70010000'), "name"=>"page-1", "sections"=>[{"_id"=>BSON::ObjectId('53f590af6d61785f70020000'), "name"=>"section-1", "alias"=>"section-1"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.0158ms
+Processing by Admin::OrdinaryCmsPagesController#create as HTML
+  Parameters: {"page"=>{"name"=>"page-1", "factory"=>"53f590af6d61785f70010000"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"$query"=>{"_id"=>BSON::ObjectId('53f590af6d61785f70000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.8278ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"_id"=>BSON::ObjectId('53f590af6d61785f70010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8417ms
+Unpermitted parameters: page
+Completed 500 Internal Server Error in 25816ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.2069ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.8917ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7245ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7508ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.7699ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f590c96d61785f70030000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$JGEPxzUwyAGQwETZ5X/2EOHpLIk./bmcH8wMwAaUJBd961fTKiEA.", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.9202ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-2"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.7143ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_factories_pages documents=[{"_id"=>BSON::ObjectId('53f590c96d61785f70040000'), "name"=>"page-2", "sections"=>[{"_id"=>BSON::ObjectId('53f590c96d61785f70050000'), "name"=>"section-2", "alias"=>"section-2"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.0608ms
+Processing by Admin::OrdinaryCmsPagesController#create as HTML
+  Parameters: {"page"=>{"name"=>"page-1", "factory"=>"53f590c96d61785f70040000"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"$query"=>{"_id"=>BSON::ObjectId('53f590c96d61785f70030000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.8542ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"_id"=>BSON::ObjectId('53f590c96d61785f70040000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7344ms
+Unpermitted parameters: page
+Completed 500 Internal Server Error in 8ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9293ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7666ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7164ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.6264ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7629ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7128ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7291ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7352ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.7437ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f590cf6d61785f8a000000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$1yfVPTBydMdaByVRY1ESFeqcai8uguYi3/lUdv3at4.K70tTTpfsK", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.0600ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.7343ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_factories_pages documents=[{"_id"=>BSON::ObjectId('53f590cf6d61785f8a010000'), "name"=>"page-1", "sections"=>[{"_id"=>BSON::ObjectId('53f590cf6d61785f8a020000'), "name"=>"section-1", "alias"=>"section-1"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.1007ms
+Processing by Admin::OrdinaryCmsPagesController#create as HTML
+  Parameters: {"page"=>{"name"=>"page-1", "factory"=>"53f590cf6d61785f8a010000"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"$query"=>{"_id"=>BSON::ObjectId('53f590cf6d61785f8a000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.9027ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"_id"=>BSON::ObjectId('53f590cf6d61785f8a010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9215ms
+Unpermitted parameters: page
+Unpermitted parameters: page
+Completed 500 Internal Server Error in 28977ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.0200ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.2693ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7585ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.9359ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.8104ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f590ec6d61785f8a030000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$dqeeJFTW85vz8AzZF3y3uuZEBVKXCXJtQ8iQIspwSr1bj8Y6Ui9TO", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 13.0392ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-2"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.7935ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.7187ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7724ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7090ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7920ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7470ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.7596ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f590f36d61785fad000000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$feloAHpW47aj5e.7.W5Yq.l//9cZ4kCNi/6KT7qhscPpxa82YbFP2", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.0263ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.7194ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_factories_pages documents=[{"_id"=>BSON::ObjectId('53f590f36d61785fad010000'), "name"=>"page-1", "sections"=>[{"_id"=>BSON::ObjectId('53f590f36d61785fad020000'), "name"=>"section-1", "alias"=>"section-1"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.0871ms
+Processing by Admin::OrdinaryCmsPagesController#create as HTML
+  Parameters: {"page"=>{"name"=>"page-1", "factory"=>"53f590f36d61785fad010000"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"$query"=>{"_id"=>BSON::ObjectId('53f590f36d61785fad000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.8499ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"_id"=>BSON::ObjectId('53f590f36d61785fad010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9225ms
+Unpermitted parameters: page
+Unpermitted parameters: page
+Unpermitted parameters: page
+Completed 500 Internal Server Error in 7501ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.0621ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.9288ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.1599ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.9391ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.9530ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f590fa6d61785fad030000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$41kJyez/8ew17cUZ/20nm.nGac56e9uqDHl8vyPk4V9Qrxw7/Ymqi", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.1296ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-2"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.6481ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_factories_pages documents=[{"_id"=>BSON::ObjectId('53f590fa6d61785fad040000'), "name"=>"page-2", "sections"=>[{"_id"=>BSON::ObjectId('53f590fa6d61785fad050000'), "name"=>"section-2", "alias"=>"section-2"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.9475ms
+Processing by Admin::OrdinaryCmsPagesController#create as HTML
+  Parameters: {"page"=>{"name"=>"page-1", "factory"=>"53f590fa6d61785fad040000"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"$query"=>{"_id"=>BSON::ObjectId('53f590fa6d61785fad030000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.8344ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"_id"=>BSON::ObjectId('53f590fa6d61785fad040000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6710ms
+Unpermitted parameters: page
+Unpermitted parameters: page
+Completed 500 Internal Server Error in 3033ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.6072ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.9778ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.9797ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.9371ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.6654ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8414ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7873ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6693ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6793ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.7328ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f591046d61785fd5000000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$WmfzJ0n4lHoswOnKj1N/0u.VN9UK.drm5skBirWUvTE/tQop4yq4O", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.1089ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.7113ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_factories_pages documents=[{"_id"=>BSON::ObjectId('53f591046d61785fd5010000'), "name"=>"page-1", "sections"=>[{"_id"=>BSON::ObjectId('53f591046d61785fd5020000'), "name"=>"section-1", "alias"=>"section-1"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.0920ms
+Processing by Admin::OrdinaryCmsPagesController#create as HTML
+  Parameters: {"page"=>{"name"=>"page-1", "factory"=>"53f591046d61785fd5010000"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"$query"=>{"_id"=>BSON::ObjectId('53f591046d61785fd5000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.8487ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"_id"=>BSON::ObjectId('53f591046d61785fd5010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.1404ms
+Unpermitted parameters: page
+Unpermitted parameters: page
+Completed 500 Internal Server Error in 19268ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.2914ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.9866ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.0658ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.1425ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.9913ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f591176d61785fd5030000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$6A0bJFBy.clhH9eLpzjnEO4R7thbWQncFNI7geJdEphxqaTqWaTKi", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.0700ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-2"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.6333ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_factories_pages documents=[{"_id"=>BSON::ObjectId('53f591176d61785fd5040000'), "name"=>"page-2", "sections"=>[{"_id"=>BSON::ObjectId('53f591176d61785fd5050000'), "name"=>"section-2", "alias"=>"section-2"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 19.1473ms
+Processing by Admin::OrdinaryCmsPagesController#create as HTML
+  Parameters: {"page"=>{"name"=>"page-1", "factory"=>"53f591176d61785fd5040000"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"$query"=>{"_id"=>BSON::ObjectId('53f591176d61785fd5030000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.9811ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"_id"=>BSON::ObjectId('53f591176d61785fd5040000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8453ms
+Unpermitted parameters: page
+Unpermitted parameters: page
+Completed 500 Internal Server Error in 2606ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9875ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.6140ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.0355ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.2640ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.6815ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7409ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6662ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6066ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.5784ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.7266ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f5912b6d61785ffa000000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$VYBDnmzUwNqqVEFdiBIu6eTYz.rszQvUC1frsn7ywMjeFhp05PjwG", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.1800ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.7210ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_factories_pages documents=[{"_id"=>BSON::ObjectId('53f5912b6d61785ffa010000'), "name"=>"page-1", "sections"=>[{"_id"=>BSON::ObjectId('53f5912b6d61785ffa020000'), "name"=>"section-1", "alias"=>"section-1"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.1704ms
+Processing by Admin::OrdinaryCmsPagesController#create as HTML
+  Parameters: {"page"=>{"name"=>"page-1", "factory"=>"53f5912b6d61785ffa010000"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"$query"=>{"_id"=>BSON::ObjectId('53f5912b6d61785ffa000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 1.1256ms
+Unpermitted parameters: page
+Unpermitted parameters: page
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"_id"=>BSON::ObjectId('53f5912b6d61785ffa010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9450ms
+Completed 500 Internal Server Error in 16646ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.9447ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.8477ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7318ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.0191ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.9350ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f5913b6d61785ffa030000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$jc2G.D.nBzT8UQRdv5XbzO64QMrFJ51OXnoaN8jkbv0pm.r6r.kQK", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.1612ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-2"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 2.6536ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.5035ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7716ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6659ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.5944ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6539ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.7157ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f591426d61786015000000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$1ETuGIU6KT4Ppe/1WNm/xuxN.m05NQ2SbGXiHkrc/R3YIu2dwZ1.y", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.3971ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.7050ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_factories_pages documents=[{"_id"=>BSON::ObjectId('53f591426d61786015010000'), "name"=>"page-1", "sections"=>[{"_id"=>BSON::ObjectId('53f591426d61786015020000'), "name"=>"section-1", "alias"=>"section-1"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.2201ms
+Processing by Admin::OrdinaryCmsPagesController#create as HTML
+  Parameters: {"page"=>{"name"=>"page-1", "factory"=>"53f591426d61786015010000"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"$query"=>{"_id"=>BSON::ObjectId('53f591426d61786015000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.8233ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"_id"=>BSON::ObjectId('53f591426d61786015010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.0143ms
+Unpermitted parameters: page
+Unpermitted parameters: page
+Completed 500 Internal Server Error in 213956ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.0974ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.8616ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.9359ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.9241ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.8055ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f592186d61786015030000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$VMo5hfECGXevtJCNcZSm3OUNKJenG0/OiubqcvFx8JBMAWdXRCIVC", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.2622ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-2"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.7636ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_factories_pages documents=[{"_id"=>BSON::ObjectId('53f592186d61786015040000'), "name"=>"page-2", "sections"=>[{"_id"=>BSON::ObjectId('53f592186d61786015050000'), "name"=>"section-2", "alias"=>"section-2"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.0950ms
+Processing by Admin::OrdinaryCmsPagesController#create as HTML
+  Parameters: {"page"=>{"name"=>"page-1", "factory"=>"53f592186d61786015040000"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"$query"=>{"_id"=>BSON::ObjectId('53f592186d61786015030000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.9621ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"_id"=>BSON::ObjectId('53f592186d61786015040000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7592ms
+Unpermitted parameters: page
+Completed 500 Internal Server Error in 2466ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9747ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7875ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7326ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7037ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.6248ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8926ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.9058ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7902ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.8753ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.8568ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f592226d61786079000000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$NTrp5boXYlw.Ts9p3b1KfORVB.PK8Oy/iIwiYPE3P9MTvHss.YEwC", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.2233ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.6891ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_factories_pages documents=[{"_id"=>BSON::ObjectId('53f592226d61786079010000'), "name"=>"page-1", "sections"=>[{"_id"=>BSON::ObjectId('53f592226d61786079020000'), "name"=>"section-1", "alias"=>"section-1"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.1944ms
+Processing by Admin::OrdinaryCmsPagesController#create as HTML
+  Parameters: {"ordinary_cms_page"=>{"name"=>"page-1", "factory"=>"53f592226d61786079010000"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"$query"=>{"_id"=>BSON::ObjectId('53f592226d61786079000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.8191ms
+Completed 500 Internal Server Error in 8ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8722ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7432ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7822ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6214ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.8229ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f592226d61786079030000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$FeOnhMulJW2eXh/gQ46R/uMXq4u12.27LT6m6463JeWP20c8zCvP2", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.0684ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-2"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.6214ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_factories_pages documents=[{"_id"=>BSON::ObjectId('53f592226d61786079040000'), "name"=>"page-2", "sections"=>[{"_id"=>BSON::ObjectId('53f592226d61786079050000'), "name"=>"section-2", "alias"=>"section-2"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.8542ms
+Processing by Admin::OrdinaryCmsPagesController#create as HTML
+  Parameters: {"ordinary_cms_page"=>{"name"=>"page-1", "factory"=>"53f592226d61786079040000"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"$query"=>{"_id"=>BSON::ObjectId('53f592226d61786079030000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.8106ms
+Completed 500 Internal Server Error in 3ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8480ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6568ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.5885ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6337ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.7161ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7699ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6841ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6154ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.5520ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.6997ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f592306d6178608a000000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$rP70Q2SEl6Rm42cy132y7e1uQtxYTQp4LM1NxRFLYsNBNwRpofw1O", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.1807ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.6997ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_factories_pages documents=[{"_id"=>BSON::ObjectId('53f592306d6178608a010000'), "name"=>"page-1", "sections"=>[{"_id"=>BSON::ObjectId('53f592306d6178608a020000'), "name"=>"section-1", "alias"=>"section-1"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.0646ms
+Processing by Admin::OrdinaryCmsPagesController#create as HTML
+  Parameters: {"ordinary_cms_page"=>{"name"=>"page-1", "factory"=>"53f592306d6178608a010000"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"$query"=>{"_id"=>BSON::ObjectId('53f592306d6178608a000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.8090ms
+Completed 500 Internal Server Error in 72ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9572ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7377ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6251ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.5709ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 4.3921ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f592306d6178608a030000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$KXJhPa3t53wn8zOoo0t69.rVGw28jooX2l6yLDwZqg1S3RyMY2H1C", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.1249ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-2"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.6136ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_factories_pages documents=[{"_id"=>BSON::ObjectId('53f592306d6178608a040000'), "name"=>"page-2", "sections"=>[{"_id"=>BSON::ObjectId('53f592306d6178608a050000'), "name"=>"section-2", "alias"=>"section-2"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.8300ms
+Processing by Admin::OrdinaryCmsPagesController#create as HTML
+  Parameters: {"ordinary_cms_page"=>{"name"=>"page-1", "factory"=>"53f592306d6178608a040000"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"$query"=>{"_id"=>BSON::ObjectId('53f592306d6178608a030000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.8100ms
+Completed 500 Internal Server Error in 4ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8975ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6640ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6096ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.5534ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.5797ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8621ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7002ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6016ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.5842ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.6962ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f592616d617860a6000000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$Kwl7uu0whIfBFkobaH5tQeSet1CSlytjv03LdmZYC1pUughbCYTQK", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.0570ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.6864ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_factories_pages documents=[{"_id"=>BSON::ObjectId('53f592616d617860a6010000'), "name"=>"page-1", "sections"=>[{"_id"=>BSON::ObjectId('53f592616d617860a6020000'), "name"=>"section-1", "alias"=>"section-1"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.0966ms
+Processing by Admin::OrdinaryCmsPagesController#create as HTML
+  Parameters: {"ordinary_cms_page"=>{"name"=>"page-1", "factory"=>"53f592616d617860a6010000"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"$query"=>{"_id"=>BSON::ObjectId('53f592616d617860a6000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.8311ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"_id"=>BSON::ObjectId('53f592616d617860a6010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.0092ms
+Completed 500 Internal Server Error in 15550ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 2.1346ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.4062ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 2.5595ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.0259ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.7292ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f592716d617860a6030000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$uMb2Pt7AxZ3uSMbmXtT0WOBunKTVY/SJx.9kWzMf4QvV5IO62iGW2", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.5272ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-2"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.6218ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_factories_pages documents=[{"_id"=>BSON::ObjectId('53f592716d617860a6040000'), "name"=>"page-2", "sections"=>[{"_id"=>BSON::ObjectId('53f592716d617860a6050000'), "name"=>"section-2", "alias"=>"section-2"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.8438ms
+Processing by Admin::OrdinaryCmsPagesController#create as HTML
+  Parameters: {"ordinary_cms_page"=>{"name"=>"page-1", "factory"=>"53f592716d617860a6040000"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"$query"=>{"_id"=>BSON::ObjectId('53f592716d617860a6030000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.8449ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"_id"=>BSON::ObjectId('53f592716d617860a6040000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8325ms
+Completed 500 Internal Server Error in 7ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8979ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.8119ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6687ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.5971ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.4822ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7184ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7358ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6777ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6366ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.7646ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f592806d617860c3000000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$RlLaZ3r3bvyOuB/XAPFpGeAZGxFM86YKI.f3h4YIjA7qi2hqPYevq", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.0140ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.7034ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_factories_pages documents=[{"_id"=>BSON::ObjectId('53f592806d617860c3010000'), "name"=>"page-1", "sections"=>[{"_id"=>BSON::ObjectId('53f592806d617860c3020000'), "name"=>"section-1", "alias"=>"section-1"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 11.8342ms
+Processing by Admin::OrdinaryCmsPagesController#create as HTML
+  Parameters: {"ordinary_cms_page"=>{"name"=>"page-1", "factory"=>"53f592806d617860c3010000"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"$query"=>{"_id"=>BSON::ObjectId('53f592806d617860c3000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.8361ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"_id"=>BSON::ObjectId('53f592806d617860c3010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.0286ms
+Completed 500 Internal Server Error in 68877ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.0091ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7719ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.8524ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.8176ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.7539ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f592c56d617860c3030000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$VTcUnrHXjBt2SJFUuG6rH.tnIjXLUQxgdFrATOaiGOLCxctX833wG", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.9260ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-2"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.7140ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_factories_pages documents=[{"_id"=>BSON::ObjectId('53f592c56d617860c3040000'), "name"=>"page-2", "sections"=>[{"_id"=>BSON::ObjectId('53f592c56d617860c3050000'), "name"=>"section-2", "alias"=>"section-2"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.9980ms
+Processing by Admin::OrdinaryCmsPagesController#create as HTML
+  Parameters: {"ordinary_cms_page"=>{"name"=>"page-1", "factory"=>"53f592c56d617860c3040000"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"$query"=>{"_id"=>BSON::ObjectId('53f592c56d617860c3030000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.8413ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"_id"=>BSON::ObjectId('53f592c56d617860c3040000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7290ms
+Completed 500 Internal Server Error in 7ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.5644ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9133ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.9423ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.1269ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.8100ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.6838ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f592cb6d617860eb000000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$aT7S9jjsuSUciTpGVdMGcOX/c11hubja7pFKdorb8MrZkdZmUClQG", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.9736ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.7032ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_factories_pages documents=[{"_id"=>BSON::ObjectId('53f592cb6d617860eb010000'), "name"=>"page-1", "sections"=>[{"_id"=>BSON::ObjectId('53f592cb6d617860eb020000'), "name"=>"section-1", "alias"=>"section-1"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.0940ms
+Processing by Admin::OrdinaryCmsPagesController#create as HTML
+  Parameters: {"ordinary_cms_page"=>{"name"=>"page-1", "factory"=>"53f592cb6d617860eb010000"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"$query"=>{"_id"=>BSON::ObjectId('53f592cb6d617860eb000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.7995ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"_id"=>BSON::ObjectId('53f592cb6d617860eb010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8734ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.6779ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 0.9166ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 0.7941ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dummy_test collection=ordinary_cms_pages selector={"position"=>{"$gte"=>1}} update={"$inc"=>{"position"=>1}} flags=[:multi]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.8407ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"_slugs"=>{"$all"=>[/^page\-1(?:-(\d+))?$/]}, "_id"=>{"$ne"=>BSON::ObjectId('53f592cc6d617860eb030000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9379ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_pages documents=[{"_id"=>BSON::ObjectId('53f592cc6d617860eb030000'), "text"=>"", "_slugs"=>["page-1"], "name"=>"page-1", "root"=>false, "position"=>1, "seo"=>{"_id"=>BSON::ObjectId('53f592cc6d617860eb040000'), "title"=>"page-1", "description"=>"", "keywords"=>""}, "sections"=>[{"_id"=>BSON::ObjectId('53f592cc6d617860eb050000'), "name"=>"section-1", "alias"=>"section-1"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.2337ms
+Redirected to http://test.host/admin/ordinary_cms_pages
+Completed 302 Found in 162ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.0064ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7697ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6450ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.5894ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.8053ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f592cc6d617860eb060000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$8xF/Fn1QLAAEEN9LsNdGw.c0kmMdxFm3Hu5hgDWl2aydbH1l/bT1W", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.9971ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-2"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.6592ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_factories_pages documents=[{"_id"=>BSON::ObjectId('53f592cc6d617860eb070000'), "name"=>"page-2", "sections"=>[{"_id"=>BSON::ObjectId('53f592cc6d617860eb080000'), "name"=>"section-2", "alias"=>"section-2"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.8747ms
+Processing by Admin::OrdinaryCmsPagesController#create as HTML
+  Parameters: {"ordinary_cms_page"=>{"name"=>"page-1", "factory"=>"53f592cc6d617860eb070000"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"$query"=>{"_id"=>BSON::ObjectId('53f592cc6d617860eb060000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.7873ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"_id"=>BSON::ObjectId('53f592cc6d617860eb070000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6847ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.6376ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 1.0136ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 0.6628ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dummy_test collection=ordinary_cms_pages selector={"position"=>{"$gte"=>1}} update={"$inc"=>{"position"=>1}} flags=[:multi]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.8160ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"_slugs"=>{"$all"=>[/^page\-1(?:-(\d+))?$/]}, "_id"=>{"$ne"=>BSON::ObjectId('53f592cc6d617860eb090000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8509ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_pages documents=[{"_id"=>BSON::ObjectId('53f592cc6d617860eb090000'), "text"=>"", "_slugs"=>["page-1"], "name"=>"page-1", "root"=>false, "position"=>1, "seo"=>{"_id"=>BSON::ObjectId('53f592cc6d617860eb0a0000'), "title"=>"page-1", "description"=>"", "keywords"=>""}, "sections"=>[{"_id"=>BSON::ObjectId('53f592cc6d617860eb0b0000'), "name"=>"section-2", "alias"=>"section-2"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.0881ms
+Redirected to http://test.host/admin/ordinary_cms_pages
+Completed 302 Found in 32ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9956ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.8763ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.8036ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7889ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 2.3987ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8257ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7030ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6038ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6293ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.7031ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f592fb6d61786109000000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$xP0BnezQNLjuVP9xwTONm.Q.u2zQC2qmGXXlnst6adzGRnw0Qghvu", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.0716ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.7836ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_factories_pages documents=[{"_id"=>BSON::ObjectId('53f592fb6d61786109010000'), "name"=>"page-1", "sections"=>[{"_id"=>BSON::ObjectId('53f592fb6d61786109020000'), "name"=>"section-1", "alias"=>"section-1"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.0589ms
+Processing by Admin::OrdinaryCmsPagesController#create as HTML
+  Parameters: {"ordinary_cms_page"=>{"name"=>"page-1", "factory"=>"53f592fb6d61786109010000"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"$query"=>{"_id"=>BSON::ObjectId('53f592fb6d61786109000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.8445ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"_id"=>BSON::ObjectId('53f592fb6d61786109010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8888ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 1.0320ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 1.1444ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 1.0575ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dummy_test collection=ordinary_cms_pages selector={"position"=>{"$gte"=>1}} update={"$inc"=>{"position"=>1}} flags=[:multi]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.1247ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"_slugs"=>{"$all"=>[/^page\-1(?:-(\d+))?$/]}, "_id"=>{"$ne"=>BSON::ObjectId('53f593446d61786109030000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.0895ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_pages documents=[{"_id"=>BSON::ObjectId('53f593446d61786109030000'), "text"=>"", "_slugs"=>["page-1"], "name"=>"page-1", "root"=>false, "position"=>1, "seo"=>{"_id"=>BSON::ObjectId('53f593446d61786109040000'), "title"=>"page-1", "description"=>"", "keywords"=>""}, "sections"=>[{"_id"=>BSON::ObjectId('53f593446d61786109050000'), "name"=>"section-1", "alias"=>"section-1"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.3560ms
+Redirected to http://test.host/admin/ordinary_cms_pages
+Completed 302 Found in 586711ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 2.2395ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.0656ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.3521ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.0538ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.0610ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.9005ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f595466d61786109060000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$A2.tPaRyxyT9R5vbsu7G0.bdkkRfZRh6jq/qDK00R7hiYaVEz.xoS", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.2490ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-2"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.7666ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_factories_pages documents=[{"_id"=>BSON::ObjectId('53f595466d61786109070000'), "name"=>"page-2", "sections"=>[{"_id"=>BSON::ObjectId('53f595466d61786109080000'), "name"=>"section-2", "alias"=>"section-2"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.3650ms
+Processing by Admin::OrdinaryCmsPagesController#create as HTML
+  Parameters: {"ordinary_cms_page"=>{"name"=>"page-1", "factory"=>"53f595466d61786109070000"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"$query"=>{"_id"=>BSON::ObjectId('53f595466d61786109060000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 1.0569ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"_id"=>BSON::ObjectId('53f595466d61786109070000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8100ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.6936ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 0.8787ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 1.0008ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dummy_test collection=ordinary_cms_pages selector={"position"=>{"$gte"=>1}} update={"$inc"=>{"position"=>1}} flags=[:multi]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.0890ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"_slugs"=>{"$all"=>[/^page\-1(?:-(\d+))?$/]}, "_id"=>{"$ne"=>BSON::ObjectId('53f595496d61786109090000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9564ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_pages documents=[{"_id"=>BSON::ObjectId('53f595496d61786109090000'), "text"=>"", "_slugs"=>["page-1"], "name"=>"page-1", "root"=>false, "position"=>1, "seo"=>{"_id"=>BSON::ObjectId('53f595496d617861090a0000'), "title"=>"page-1", "description"=>"", "keywords"=>""}, "sections"=>[{"_id"=>BSON::ObjectId('53f595496d617861090b0000'), "name"=>"section-2", "alias"=>"section-2"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.2867ms
+Redirected to http://test.host/admin/ordinary_cms_pages
+Completed 302 Found in 2800ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9909ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.9294ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7348ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7831ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.4680ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7248ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7462ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6349ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.5835ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.8095ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f5954f6d61786278000000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$yoGhxAr3i2dnUTNMqa.8Je/JWxrqqaybADyQ/fs8kJ6ANVBPKz9ni", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.1339ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.7144ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_factories_pages documents=[{"_id"=>BSON::ObjectId('53f5954f6d61786278010000'), "name"=>"page-1", "sections"=>[{"_id"=>BSON::ObjectId('53f5954f6d61786278020000'), "name"=>"section-1", "alias"=>"section-1"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.0504ms
+Processing by Admin::OrdinaryCmsPagesController#create as HTML
+  Parameters: {"ordinary_cms_page"=>{"name"=>"page-1", "factory"=>"53f5954f6d61786278010000"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"$query"=>{"_id"=>BSON::ObjectId('53f5954f6d61786278000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.8390ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"_id"=>BSON::ObjectId('53f5954f6d61786278010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8676ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.7407ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 0.9906ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 0.7313ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dummy_test collection=ordinary_cms_pages selector={"position"=>{"$gte"=>1}} update={"$inc"=>{"position"=>1}} flags=[:multi]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.8421ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"_slugs"=>{"$all"=>[/^page\-1(?:-(\d+))?$/]}, "_id"=>{"$ne"=>BSON::ObjectId('53f5954f6d61786278030000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8851ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_pages documents=[{"_id"=>BSON::ObjectId('53f5954f6d61786278030000'), "text"=>"", "_slugs"=>["page-1"], "name"=>"page-1", "root"=>false, "position"=>1, "seo"=>{"_id"=>BSON::ObjectId('53f5954f6d61786278040000'), "title"=>"page-1", "description"=>"", "keywords"=>""}, "sections"=>[{"_id"=>BSON::ObjectId('53f5954f6d61786278050000'), "name"=>"section-1", "alias"=>"section-1"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.1991ms
+Redirected to http://test.host/admin/ordinary_cms_pages
+Completed 302 Found in 3349ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9256ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.9281ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6879ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6319ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.7050ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f595536d61786278060000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$Z4JOnBviHdWD.THrbv.IcOdIzA2xQSIIUP7zzB7P6mmTf43ZME.D6", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.8871ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-2"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.6762ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_factories_pages documents=[{"_id"=>BSON::ObjectId('53f595536d61786278070000'), "name"=>"page-2", "sections"=>[{"_id"=>BSON::ObjectId('53f595536d61786278080000'), "name"=>"section-2", "alias"=>"section-2"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.8887ms
+Processing by Admin::OrdinaryCmsPagesController#create as HTML
+  Parameters: {"ordinary_cms_page"=>{"name"=>"page-1", "factory"=>"53f595536d61786278070000"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"$query"=>{"_id"=>BSON::ObjectId('53f595536d61786278060000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.9278ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"_id"=>BSON::ObjectId('53f595536d61786278070000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8780ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.6335ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 0.8212ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 0.7580ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dummy_test collection=ordinary_cms_pages selector={"position"=>{"$gte"=>1}} update={"$inc"=>{"position"=>1}} flags=[:multi]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.1114ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"_slugs"=>{"$all"=>[/^page\-1(?:-(\d+))?$/]}, "_id"=>{"$ne"=>BSON::ObjectId('53f595536d61786278090000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8677ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_pages documents=[{"_id"=>BSON::ObjectId('53f595536d61786278090000'), "text"=>"", "_slugs"=>["page-1"], "name"=>"page-1", "root"=>false, "position"=>1, "seo"=>{"_id"=>BSON::ObjectId('53f595536d617862780a0000'), "title"=>"page-1", "description"=>"", "keywords"=>""}, "sections"=>[{"_id"=>BSON::ObjectId('53f595536d617862780b0000'), "name"=>"section-2", "alias"=>"section-2"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.1113ms
+Redirected to http://test.host/admin/ordinary_cms_pages
+Completed 302 Found in 36ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9062ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7313ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6085ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.5682ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.1600ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6430ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.4031ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.2967ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.2898ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.7666ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f5957f6d61786294000000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$TmKjrGS8VVET5RJq8.n8buFztGLRaNtQO/X5wAUyx952cJIT.Vs1y", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7610ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.5325ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_factories_pages documents=[{"_id"=>BSON::ObjectId('53f5957f6d61786294010000'), "name"=>"page-1", "sections"=>[{"_id"=>BSON::ObjectId('53f5957f6d61786294020000'), "name"=>"section-1", "alias"=>"section-1"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6678ms
+Processing by Admin::OrdinaryCmsPagesController#create as HTML
+  Parameters: {"ordinary_cms_page"=>{"name"=>"page-1", "factory"=>"53f5957f6d61786294010000"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"$query"=>{"_id"=>BSON::ObjectId('53f5957f6d61786294000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.5668ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"_id"=>BSON::ObjectId('53f5957f6d61786294010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6154ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.5372ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 0.5749ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 0.3294ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dummy_test collection=ordinary_cms_pages selector={"position"=>{"$gte"=>1}} update={"$inc"=>{"position"=>1}} flags=[:multi]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.4411ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"_slugs"=>{"$all"=>[/^page\-1(?:-(\d+))?$/]}, "_id"=>{"$ne"=>BSON::ObjectId('53f5957f6d61786294030000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6990ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_pages documents=[{"_id"=>BSON::ObjectId('53f5957f6d61786294030000'), "text"=>"", "_slugs"=>["page-1"], "name"=>"page-1", "root"=>false, "position"=>1, "seo"=>{"_id"=>BSON::ObjectId('53f5957f6d61786294040000'), "title"=>"page-1", "description"=>"", "keywords"=>""}, "sections"=>[{"_id"=>BSON::ObjectId('53f5957f6d61786294050000'), "name"=>"section-1", "alias"=>"section-1"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7044ms
+Redirected to http://test.host/admin/ordinary_cms_pages
+Completed 302 Found in 56ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6608ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.4410ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6654ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.3623ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.1580ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4506ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.3579ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.3143ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.3289ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.5448ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f596ed6d61786325000000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$d2ecG5vVzeTJ4OxMDLrD8ez1QVAAThevwZGpYBlXLs9mnIO.qYQfu", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7050ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.5252ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_factories_pages documents=[{"_id"=>BSON::ObjectId('53f596ed6d61786325010000'), "name"=>"page-1", "sections"=>[{"_id"=>BSON::ObjectId('53f596ed6d61786325020000'), "name"=>"section-1", "alias"=>"section-1"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7056ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:count=>"ordinary_cms_pages", :query=>{}} runtime: 0.5831ms
+Processing by Admin::OrdinaryCmsPagesController#create as HTML
+  Parameters: {"ordinary_cms_page"=>{"name"=>"page-1", "factory"=>"53f596ed6d61786325010000"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"$query"=>{"_id"=>BSON::ObjectId('53f596ed6d61786325000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.5830ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"_id"=>BSON::ObjectId('53f596ed6d61786325010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.6693ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.5556ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 0.6198ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 0.3628ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dummy_test collection=ordinary_cms_pages selector={"position"=>{"$gte"=>1}} update={"$inc"=>{"position"=>1}} flags=[:multi]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.4610ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"_slugs"=>{"$all"=>[/^page\-1(?:-(\d+))?$/]}, "_id"=>{"$ne"=>BSON::ObjectId('53f596ee6d61786325030000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6467ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_pages documents=[{"_id"=>BSON::ObjectId('53f596ee6d61786325030000'), "text"=>"", "_slugs"=>["page-1"], "name"=>"page-1", "root"=>false, "position"=>1, "seo"=>{"_id"=>BSON::ObjectId('53f596ee6d61786325040000'), "title"=>"page-1", "description"=>"", "keywords"=>""}, "sections"=>[{"_id"=>BSON::ObjectId('53f596ee6d61786325050000'), "name"=>"section-1", "alias"=>"section-1"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6916ms
+Redirected to http://test.host/admin/ordinary_cms_pages
+Completed 302 Found in 56ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:count=>"ordinary_cms_pages", :query=>{}} runtime: 0.5300ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5163ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.4272ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.3158ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.3007ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 2.5924ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8165ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7192ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6990ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.5904ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.7853ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f5970a6d61786337000000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$mBs/c5zG29iO8.QMXt8GEOKxxzaE.LZF14PB6CeenTrf/XDsNBJX2", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.0426ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.7803ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_factories_pages documents=[{"_id"=>BSON::ObjectId('53f5970a6d61786337010000'), "name"=>"page-1", "sections"=>[{"_id"=>BSON::ObjectId('53f5970a6d61786337020000'), "name"=>"section-1", "alias"=>"section-1"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.0884ms
+Processing by Admin::OrdinaryCmsPagesController#create as HTML
+  Parameters: {"ordinary_cms_page"=>{"name"=>"page-1", "factory"=>"53f5970a6d61786337010000"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"$query"=>{"_id"=>BSON::ObjectId('53f5970a6d61786337000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.8887ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"_id"=>BSON::ObjectId('53f5970a6d61786337010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9334ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.7826ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 0.9612ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 1.7597ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dummy_test collection=ordinary_cms_pages selector={"position"=>{"$gte"=>1}} update={"$inc"=>{"position"=>1}} flags=[:multi]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.0893ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"_slugs"=>{"$all"=>[/^page\-1(?:-(\d+))?$/]}, "_id"=>{"$ne"=>BSON::ObjectId('53f5970a6d61786337030000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.0480ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_pages documents=[{"_id"=>BSON::ObjectId('53f5970a6d61786337030000'), "text"=>"", "_slugs"=>["page-1"], "name"=>"page-1", "root"=>false, "position"=>1, "seo"=>{"_id"=>BSON::ObjectId('53f5970a6d61786337040000'), "title"=>"page-1", "description"=>"", "keywords"=>""}, "sections"=>[{"_id"=>BSON::ObjectId('53f5970a6d61786337050000'), "name"=>"section-1", "alias"=>"section-1"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.2533ms
+Redirected to http://test.host/admin/ordinary_cms_pages
+Completed 302 Found in 151ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.2254ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.9943ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.8093ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.7523ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.5855ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.2684ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.5448ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.4416ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.5591ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.8344ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f597516d61786369000000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$S8bBNt6c3n33qHiYhdAJYOqER4Ke2GTSW7SQi5QLp7vcobjcRowvO", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7588ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.6017ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_factories_pages documents=[{"_id"=>BSON::ObjectId('53f597516d61786369010000'), "name"=>"page-1", "sections"=>[{"_id"=>BSON::ObjectId('53f597516d61786369020000'), "name"=>"section-1", "alias"=>"section-1"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7175ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:count=>"ordinary_cms_pages", :query=>{}} runtime: 1.4442ms
+Processing by Admin::OrdinaryCmsPagesController#create as HTML
+  Parameters: {"ordinary_cms_page"=>{"name"=>"page-1", "factory"=>"53f597516d61786369010000"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"$query"=>{"_id"=>BSON::ObjectId('53f597516d61786369000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.6113ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"_id"=>BSON::ObjectId('53f597516d61786369010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6844ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.6159ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 0.6480ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 0.9872ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dummy_test collection=ordinary_cms_pages selector={"position"=>{"$gte"=>1}} update={"$inc"=>{"position"=>1}} flags=[:multi]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6136ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"_slugs"=>{"$all"=>[/^page\-1(?:-(\d+))?$/]}, "_id"=>{"$ne"=>BSON::ObjectId('53f597516d61786369030000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7690ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_pages documents=[{"_id"=>BSON::ObjectId('53f597516d61786369030000'), "text"=>"", "_slugs"=>["page-1"], "name"=>"page-1", "root"=>false, "position"=>1, "seo"=>{"_id"=>BSON::ObjectId('53f597516d61786369040000'), "title"=>"page-1", "description"=>"", "keywords"=>""}, "sections"=>[{"_id"=>BSON::ObjectId('53f597516d61786369050000'), "name"=>"section-1", "alias"=>"section-1"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.4731ms
+Redirected to http://test.host/admin/ordinary_cms_pages
+Completed 302 Found in 64ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:count=>"ordinary_cms_pages", :query=>{}} runtime: 1.1298ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6518ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.4931ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.3718ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.3443ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.6295ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8052ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.9254ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.8235ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.8609ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.7409ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f597546d61786372000000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$Q.MhXd8pm65lRNJCjnpj7OsHSSyvGRtiL7PaFEhYzqSfAm.L0DHXq", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.0830ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.7254ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_factories_pages documents=[{"_id"=>BSON::ObjectId('53f597546d61786372010000'), "name"=>"page-1", "sections"=>[{"_id"=>BSON::ObjectId('53f597546d61786372020000'), "name"=>"section-1", "alias"=>"section-1"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.0731ms
+Processing by Admin::OrdinaryCmsPagesController#create as HTML
+  Parameters: {"ordinary_cms_page"=>{"name"=>"page-1", "factory"=>"53f597546d61786372010000"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"$query"=>{"_id"=>BSON::ObjectId('53f597546d61786372000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.7947ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"_id"=>BSON::ObjectId('53f597546d61786372010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8616ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.6867ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 0.8961ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 0.6524ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dummy_test collection=ordinary_cms_pages selector={"position"=>{"$gte"=>1}} update={"$inc"=>{"position"=>1}} flags=[:multi]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.8192ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"_slugs"=>{"$all"=>[/^page\-1(?:-(\d+))?$/]}, "_id"=>{"$ne"=>BSON::ObjectId('53f597546d61786372030000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8843ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_pages documents=[{"_id"=>BSON::ObjectId('53f597546d61786372030000'), "text"=>"", "_slugs"=>["page-1"], "name"=>"page-1", "root"=>false, "position"=>1, "seo"=>{"_id"=>BSON::ObjectId('53f597546d61786372040000'), "title"=>"page-1", "description"=>"", "keywords"=>""}, "sections"=>[{"_id"=>BSON::ObjectId('53f597546d61786372050000'), "name"=>"section-1", "alias"=>"section-1"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.2036ms
+Redirected to http://test.host/admin/ordinary_cms_pages
+Completed 302 Found in 142ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"$query"=>{}, "$orderby"=>{:_id=>-1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 1.1800ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8490ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.9168ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.8278ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7852ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.4702ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8671ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7006ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.5844ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6027ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.6914ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f5976f6d6178638d000000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$bOL7lv0xG.ceoY31Ca3HQelXKkS6ZikDxOowbT9eA6/Hi.QnSd2gS", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.2012ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.7020ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_factories_pages documents=[{"_id"=>BSON::ObjectId('53f5976f6d6178638d010000'), "name"=>"page-1", "sections"=>[{"_id"=>BSON::ObjectId('53f5976f6d6178638d020000'), "name"=>"section-1", "alias"=>"section-1"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.9982ms
+Processing by Admin::OrdinaryCmsPagesController#create as HTML
+  Parameters: {"ordinary_cms_page"=>{"name"=>"page-1", "factory"=>"53f5976f6d6178638d010000"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"$query"=>{"_id"=>BSON::ObjectId('53f5976f6d6178638d000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.8496ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"_id"=>BSON::ObjectId('53f5976f6d6178638d010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8662ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.7039ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 0.9040ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 0.7631ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dummy_test collection=ordinary_cms_pages selector={"position"=>{"$gte"=>1}} update={"$inc"=>{"position"=>1}} flags=[:multi]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.8286ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"_slugs"=>{"$all"=>[/^page\-1(?:-(\d+))?$/]}, "_id"=>{"$ne"=>BSON::ObjectId('53f5976f6d6178638d030000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8560ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_pages documents=[{"_id"=>BSON::ObjectId('53f5976f6d6178638d030000'), "text"=>"", "_slugs"=>["page-1"], "name"=>"page-1", "root"=>false, "position"=>1, "seo"=>{"_id"=>BSON::ObjectId('53f5976f6d6178638d040000'), "title"=>"page-1", "description"=>"", "keywords"=>""}, "sections"=>[{"_id"=>BSON::ObjectId('53f5976f6d6178638d050000'), "name"=>"section-1", "alias"=>"section-1"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.2044ms
+Redirected to http://test.host/admin/ordinary_cms_pages
+Completed 302 Found in 148ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"$query"=>{}, "$orderby"=>{:_id=>-1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 1.0881ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8776ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7046ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 8.8943ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7718ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.4805ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9440ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7736ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6585ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6334ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.8135ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f5977a6d6178639c000000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$B.1H6oFzByz6ucIZNwJPdeKDfhgyXFTkogWWXdSV/Q6VKbn9T0VhK", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.9990ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.7201ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_factories_pages documents=[{"_id"=>BSON::ObjectId('53f5977a6d6178639c010000'), "name"=>"page-1", "sections"=>[{"_id"=>BSON::ObjectId('53f5977a6d6178639c020000'), "name"=>"section-1", "alias"=>"section-1"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.0376ms
+Processing by Admin::OrdinaryCmsPagesController#create as HTML
+  Parameters: {"ordinary_cms_page"=>{"name"=>"page-1", "factory"=>"53f5977a6d6178639c010000"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"$query"=>{"_id"=>BSON::ObjectId('53f5977a6d6178639c000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.8368ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"_id"=>BSON::ObjectId('53f5977a6d6178639c010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8790ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.7073ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 0.9140ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 0.6928ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dummy_test collection=ordinary_cms_pages selector={"position"=>{"$gte"=>1}} update={"$inc"=>{"position"=>1}} flags=[:multi]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.8133ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"_slugs"=>{"$all"=>[/^page\-1(?:-(\d+))?$/]}, "_id"=>{"$ne"=>BSON::ObjectId('53f5977a6d6178639c030000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8891ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_pages documents=[{"_id"=>BSON::ObjectId('53f5977a6d6178639c030000'), "text"=>"", "_slugs"=>["page-1"], "name"=>"page-1", "root"=>false, "position"=>1, "seo"=>{"_id"=>BSON::ObjectId('53f5977a6d6178639c040000'), "title"=>"page-1", "description"=>"", "keywords"=>""}, "sections"=>[{"_id"=>BSON::ObjectId('53f5977a6d6178639c050000'), "name"=>"section-1", "alias"=>"section-1"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.1914ms
+Redirected to http://test.host/admin/ordinary_cms_pages
+Completed 302 Found in 151ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"$query"=>{}, "$orderby"=>{:_id=>-1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 1.0716ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.1068ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.0046ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.8809ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.2988ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.5524ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7450ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7719ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6768ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6066ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.7234ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f597ad6d617863c8000000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$HF3l9WnnYkdxxDJdM.XPbOy35oH8UsOPeI7jEORS2CatgMi4Nt6I.", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.0183ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.7055ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_factories_pages documents=[{"_id"=>BSON::ObjectId('53f597ad6d617863c8010000'), "name"=>"page-1", "sections"=>[{"_id"=>BSON::ObjectId('53f597ad6d617863c8020000'), "name"=>"section-1", "alias"=>"section-1"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.0740ms
+Processing by Admin::OrdinaryCmsPagesController#create as HTML
+  Parameters: {"ordinary_cms_page"=>{"name"=>"page-1", "factory"=>"53f597ad6d617863c8010000"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"$query"=>{"_id"=>BSON::ObjectId('53f597ad6d617863c8000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.8360ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"_id"=>BSON::ObjectId('53f597ad6d617863c8010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8695ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.7104ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 0.9341ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 0.6703ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dummy_test collection=ordinary_cms_pages selector={"position"=>{"$gte"=>1}} update={"$inc"=>{"position"=>1}} flags=[:multi]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.8703ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"_slugs"=>{"$all"=>[/^page\-1(?:-(\d+))?$/]}, "_id"=>{"$ne"=>BSON::ObjectId('53f597ad6d617863c8030000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9169ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_pages documents=[{"_id"=>BSON::ObjectId('53f597ad6d617863c8030000'), "text"=>"", "_slugs"=>["page-1"], "name"=>"page-1", "root"=>false, "position"=>1, "seo"=>{"_id"=>BSON::ObjectId('53f597ad6d617863c8040000'), "title"=>"page-1", "description"=>"", "keywords"=>""}, "sections"=>[{"_id"=>BSON::ObjectId('53f597ad6d617863c8050000'), "name"=>"section-1", "alias"=>"section-1"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.2249ms
+Redirected to http://test.host/admin/ordinary_cms_pages
+Completed 302 Found in 142ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"$query"=>{}, "$orderby"=>{:_id=>-1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 1.0848ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8727ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6945ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.9063ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 9.4116ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.2145ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9605ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.4634ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.2932ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.2634ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.5045ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f598176d617863f5000000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$vhTsiKMKQNLYa0B8N.m7Je5UlC./XGdBAm7dO3EZODTFbxapJVFe6", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7315ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.5107ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_factories_pages documents=[{"_id"=>BSON::ObjectId('53f598176d617863f5010000'), "name"=>"page-1", "sections"=>[{"_id"=>BSON::ObjectId('53f598176d617863f5020000'), "name"=>"section-1", "alias"=>"section-1"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6028ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:count=>"ordinary_cms_pages", :query=>{}} runtime: 0.5112ms
+Processing by Admin::OrdinaryCmsPagesController#create as HTML
+  Parameters: {"ordinary_cms_page"=>{"name"=>"page-1"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"$query"=>{"_id"=>BSON::ObjectId('53f598176d617863f5000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.6704ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.5165ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 0.6716ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 0.3436ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dummy_test collection=ordinary_cms_pages selector={"position"=>{"$gte"=>1}} update={"$inc"=>{"position"=>1}} flags=[:multi]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.4738ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"_slugs"=>{"$all"=>[/^page\-1(?:-(\d+))?$/]}, "_id"=>{"$ne"=>BSON::ObjectId('53f598176d617863f5030000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6314ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_pages documents=[{"_id"=>BSON::ObjectId('53f598176d617863f5030000'), "text"=>"", "_slugs"=>["page-1"], "name"=>"page-1", "root"=>false, "position"=>1, "seo"=>{"_id"=>BSON::ObjectId('53f598176d617863f5040000'), "title"=>"page-1", "description"=>"", "keywords"=>""}}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6717ms
+Redirected to http://test.host/admin/ordinary_cms_pages/page-1
+Completed 302 Found in 57ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:count=>"ordinary_cms_pages", :query=>{}} runtime: 0.8072ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8037ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.5215ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.4280ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.3361ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.6262ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f598176d617863f5050000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$n91GGjaWyaxX8R7dNTRXquwRL75KFjFydpaH/LfdX2CP2jy275gKG", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7556ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-2"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.5070ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_factories_pages documents=[{"_id"=>BSON::ObjectId('53f598176d617863f5060000'), "name"=>"page-2", "sections"=>[{"_id"=>BSON::ObjectId('53f598176d617863f5070000'), "name"=>"section-2", "alias"=>"section-2"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 9.0083ms
+Processing by Admin::OrdinaryCmsPagesController#create as HTML
+  Parameters: {"ordinary_cms_page"=>{"name"=>"page-1"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"$query"=>{"_id"=>BSON::ObjectId('53f598176d617863f5050000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.5312ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.4565ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 0.4380ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 1.3197ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dummy_test collection=ordinary_cms_pages selector={"position"=>{"$gte"=>1}} update={"$inc"=>{"position"=>1}} flags=[:multi]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.4394ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"_slugs"=>{"$all"=>[/^page\-1(?:-(\d+))?$/]}, "_id"=>{"$ne"=>BSON::ObjectId('53f598176d617863f5080000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5974ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_pages documents=[{"_id"=>BSON::ObjectId('53f598176d617863f5080000'), "text"=>"", "_slugs"=>["page-1"], "name"=>"page-1", "root"=>false, "position"=>1, "seo"=>{"_id"=>BSON::ObjectId('53f598176d617863f5090000'), "title"=>"page-1", "description"=>"", "keywords"=>""}}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6760ms
+Redirected to http://test.host/admin/ordinary_cms_pages/page-1
+Completed 302 Found in 17ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"$query"=>{}, "$orderby"=>{:_id=>-1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.5879ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6254ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.4260ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.3122ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.3016ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.1557ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4581ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.3686ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.3126ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.2900ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.5747ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f598206d61786400000000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$FV8gGkL6hZoQwDVLfXDySegXZ.GaBhc0hGAEFnIXybNAyI5gkMAR.", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.8526ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.5786ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_factories_pages documents=[{"_id"=>BSON::ObjectId('53f598206d61786400010000'), "name"=>"page-1", "sections"=>[{"_id"=>BSON::ObjectId('53f598206d61786400020000'), "name"=>"section-1", "alias"=>"section-1"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6793ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:count=>"ordinary_cms_pages", :query=>{}} runtime: 0.5071ms
+Processing by Admin::OrdinaryCmsPagesController#create as HTML
+  Parameters: {"ordinary_cms_page"=>{"name"=>"page-1", "factory"=>"53f598206d61786400010000"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"$query"=>{"_id"=>BSON::ObjectId('53f598206d61786400000000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.6078ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"_id"=>BSON::ObjectId('53f598206d61786400010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5485ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.6681ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 0.5722ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 0.3731ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dummy_test collection=ordinary_cms_pages selector={"position"=>{"$gte"=>1}} update={"$inc"=>{"position"=>1}} flags=[:multi]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.4626ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"_slugs"=>{"$all"=>[/^page\-1(?:-(\d+))?$/]}, "_id"=>{"$ne"=>BSON::ObjectId('53f598206d61786400030000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6639ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_pages documents=[{"_id"=>BSON::ObjectId('53f598206d61786400030000'), "text"=>"", "_slugs"=>["page-1"], "name"=>"page-1", "root"=>false, "position"=>1, "seo"=>{"_id"=>BSON::ObjectId('53f598206d61786400040000'), "title"=>"page-1", "description"=>"", "keywords"=>""}, "sections"=>[{"_id"=>BSON::ObjectId('53f598206d61786400050000'), "name"=>"section-1", "alias"=>"section-1"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.7085ms
+Redirected to http://test.host/admin/ordinary_cms_pages
+Completed 302 Found in 54ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:count=>"ordinary_cms_pages", :query=>{}} runtime: 0.5164ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5348ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.4790ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.4837ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.3790ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.6188ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f598206d61786400060000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$.R5iZyzLElRGXI0T0W8I7eSHnvkpcfUfqRhm1pTeFiPkSY8Ow/7yy", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6631ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-2"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.5115ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_factories_pages documents=[{"_id"=>BSON::ObjectId('53f598206d61786400070000'), "name"=>"page-2", "sections"=>[{"_id"=>BSON::ObjectId('53f598206d61786400080000'), "name"=>"section-2", "alias"=>"section-2"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6020ms
+Processing by Admin::OrdinaryCmsPagesController#create as HTML
+  Parameters: {"ordinary_cms_page"=>{"name"=>"page-1", "factory"=>"53f598206d61786400070000"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"$query"=>{"_id"=>BSON::ObjectId('53f598206d61786400060000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.5472ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"_id"=>BSON::ObjectId('53f598206d61786400070000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3821ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.4119ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 0.4691ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 0.3078ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dummy_test collection=ordinary_cms_pages selector={"position"=>{"$gte"=>1}} update={"$inc"=>{"position"=>1}} flags=[:multi]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.5162ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"_slugs"=>{"$all"=>[/^page\-1(?:-(\d+))?$/]}, "_id"=>{"$ne"=>BSON::ObjectId('53f598206d61786400090000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5781ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_pages documents=[{"_id"=>BSON::ObjectId('53f598206d61786400090000'), "text"=>"", "_slugs"=>["page-1"], "name"=>"page-1", "root"=>false, "position"=>1, "seo"=>{"_id"=>BSON::ObjectId('53f598206d617864000a0000'), "title"=>"page-1", "description"=>"", "keywords"=>""}, "sections"=>[{"_id"=>BSON::ObjectId('53f598206d617864000b0000'), "name"=>"section-2", "alias"=>"section-2"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.5781ms
+Redirected to http://test.host/admin/ordinary_cms_pages
+Completed 302 Found in 18ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"$query"=>{}, "$orderby"=>{:_id=>-1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.5827ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6451ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.4202ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.3093ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.2997ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.5651ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f598206d617864000c0000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$aomvG3XCv1VVvLvFR5GpPuxbrDaQoe0NzdUbauLavG.ayaqU/S5Aq", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 6.2456ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-3"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.5793ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_factories_pages documents=[{"_id"=>BSON::ObjectId('53f598206d617864000d0000'), "name"=>"page-3", "sections"=>[{"_id"=>BSON::ObjectId('53f598206d617864000e0000'), "name"=>"section-3", "alias"=>"section-3"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 1.0653ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:count=>"ordinary_cms_pages", :query=>{}} runtime: 0.5168ms
+Processing by Admin::OrdinaryCmsPagesController#create as HTML
+  Parameters: {"ordinary_cms_page"=>{"name"=>"page-1"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"$query"=>{"_id"=>BSON::ObjectId('53f598206d617864000c0000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.5999ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.4609ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 0.5193ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 0.4070ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dummy_test collection=ordinary_cms_pages selector={"position"=>{"$gte"=>1}} update={"$inc"=>{"position"=>1}} flags=[:multi]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6436ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"_slugs"=>{"$all"=>[/^page\-1(?:-(\d+))?$/]}, "_id"=>{"$ne"=>BSON::ObjectId('53f598206d617864000f0000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9515ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_pages documents=[{"_id"=>BSON::ObjectId('53f598206d617864000f0000'), "text"=>"", "_slugs"=>["page-1"], "name"=>"page-1", "root"=>false, "position"=>1, "seo"=>{"_id"=>BSON::ObjectId('53f598206d61786400100000'), "title"=>"page-1", "description"=>"", "keywords"=>""}}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.9094ms
+Redirected to http://test.host/admin/ordinary_cms_pages/page-1
+Completed 302 Found in 20ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:count=>"ordinary_cms_pages", :query=>{}} runtime: 0.6040ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8124ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.4271ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.2984ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.2817ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"email"=>"admin@exmple.com"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.5120ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=admin_users documents=[{"_id"=>BSON::ObjectId('53f598206d61786400110000'), "email"=>"admin@exmple.com", "encrypted_password"=>"$2a$04$dunOY/WERl0FUMuNguIpV.aAJn76DD7rsmJFuUgcy7xd/Yg9cwJqS", "sign_in_count"=>0}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.6198ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_factories_pages selector={"name"=>"page-4"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.4718ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_factories_pages documents=[{"_id"=>BSON::ObjectId('53f598206d61786400120000'), "name"=>"page-4", "sections"=>[{"_id"=>BSON::ObjectId('53f598206d61786400130000'), "name"=>"section-4", "alias"=>"section-4"}]}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.4649ms
+Processing by Admin::OrdinaryCmsPagesController#create as HTML
+  Parameters: {"ordinary_cms_page"=>{"name"=>"page-1"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=admin_users selector={"$query"=>{"_id"=>BSON::ObjectId('53f598206d61786400110000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.5339ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"name"=>"page-1"} flags=[] limit=-1 skip=0 batch_size=nil fields={:_id=>1} runtime: 0.4245ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 0.4475ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=dummy_test command={:distinct=>"ordinary_cms_pages", :key=>"position", :query=>{}} runtime: 0.3570ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=dummy_test collection=ordinary_cms_pages selector={"position"=>{"$gte"=>1}} update={"$inc"=>{"position"=>1}} flags=[:multi]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.4556ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"_slugs"=>{"$all"=>[/^page\-1(?:-(\d+))?$/]}, "_id"=>{"$ne"=>BSON::ObjectId('53f598206d61786400140000')}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6434ms
+  MOPED: 127.0.0.1:27017 INSERT       database=dummy_test collection=ordinary_cms_pages documents=[{"_id"=>BSON::ObjectId('53f598206d61786400140000'), "text"=>"", "_slugs"=>["page-1"], "name"=>"page-1", "root"=>false, "position"=>1, "seo"=>{"_id"=>BSON::ObjectId('53f598206d61786400150000'), "title"=>"page-1", "description"=>"", "keywords"=>""}}] flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.5886ms
+Redirected to http://test.host/admin/ordinary_cms_pages/page-1
+Completed 302 Found in 16ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=ordinary_cms_pages selector={"$query"=>{}, "$orderby"=>{:_id=>-1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.5799ms
+  MOPED: 127.0.0.1:27017 QUERY        database=dummy_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6184ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.3912ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=ordinary_cms_factories_pages selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.3308ms
+  MOPED: 127.0.0.1:27017 DELETE       database=dummy_test collection=admin_users selector={} flags=[]
+                         COMMAND      database=dummy_test command={:getlasterror=>1, :w=>1} runtime: 0.2837ms
