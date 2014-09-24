@@ -1,6 +1,6 @@
 ActiveAdmin.register OrdinaryCms::Page do
 
-  permit_params :name, seo_attributes: [ :id, :title, :description, :keywords ],
+  permit_params :name, :factory_id, seo_attributes: [ :id, :title, :description, :keywords ],
                 sections_attributes: [:id, :name, :text, :_destroy]
 
   member_action :set_as_root, method: :patch do

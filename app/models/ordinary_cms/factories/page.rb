@@ -11,6 +11,7 @@ module OrdinaryCms
       def build(params = {})
         page = OrdinaryCms::Page.new params
         sections.each {|s| page.sections << s.build}
+        page.factory = self
         page
       end
     end

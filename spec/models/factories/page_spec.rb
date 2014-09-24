@@ -9,7 +9,7 @@ describe OrdinaryCms::Factories::Page do
     subject {@page_factory.build}
 
     it {should be_a OrdinaryCms::Page}
-    it {expect(subject.name).to  eq(@page_factory.name)}
+    it {expect(subject.factory).to eq(@page_factory)}
     it {expect(subject.sections.first.name).to  eq(@page_factory.sections.first.name)}
     it {expect(subject.sections.first.alias).to eq(@page_factory.sections.first.alias)}
   end
