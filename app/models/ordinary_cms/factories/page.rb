@@ -6,6 +6,8 @@ module OrdinaryCms
       field :name
 
       embeds_many :sections, class_name: 'OrdinaryCms::Factories::Section'
+      has_many :pages, class_name: 'OrdinaryCms::Page'
+
       validates :name, presence: true, uniqueness: true
 
       def build(params = {})
