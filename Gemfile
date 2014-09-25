@@ -26,6 +26,7 @@ gem 'activeadmin-mongoid', github: 'elia/activeadmin-mongoid', branch: 'rails4'
 gem 'mercury-rails',       github: 'jejacks0n/mercury'
 
 gem 'mongoid_acts_as_page'
+gem 'mongoid-paperclip'
 
 group :test do
   gem 'rspec-rails'
