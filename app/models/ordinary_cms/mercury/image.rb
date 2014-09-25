@@ -8,7 +8,7 @@ module OrdinaryCms
 
 
       validates_presence_of :image
-      validates_attachment_content_type :attachment, content_type: %w(image/jpg image/jpeg image/png)
+      validates_attachment_content_type :image, content_type: %w(image/jpg image/jpeg image/png)
 
       delegate :url, :to => :image
 
