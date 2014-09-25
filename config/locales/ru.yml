@@ -4,11 +4,18 @@ ru:
 
   mongoid: &mongoid
     models:
+      admin_user:
+        one:   Администратор
+        few:   Администратора
+        many:  Администраторов
+        other: Администраторы
+
       ordinary_cms/page:
         one:   Страница
         few:   Страницы
         many:  Страниц
         other: Страницы
+
       ordinary_cms/section:
         one:   Раздел
         few:   Раздела
@@ -22,3 +29,7 @@ ru:
         name: Имя
         alias: Псевдоним
         content: Контент
+
+
+  activerecord:
+    <<: *mongoid
