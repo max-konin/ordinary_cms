@@ -24,6 +24,7 @@ gem 'jquery-ui-rails', '~> 4.2.1'
 gem 'activeadmin',         github: 'gregbell/active_admin', ref: '65aae6b68e78aad3071b2f85242b19fd3fccf426'
 gem 'activeadmin-mongoid', github: 'elia/activeadmin-mongoid', branch: 'rails4'
 gem 'mercury-rails',       github: 'jejacks0n/mercury'
+gem 'activeadmin-sortable'
 
 gem 'mongoid_acts_as_page'
 gem 'mongoid-paperclip'
