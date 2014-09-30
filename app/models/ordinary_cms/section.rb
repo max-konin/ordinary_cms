@@ -17,7 +17,7 @@ module OrdinaryCms
 
     def render(what=:content)
       if what == :alias
-        ActionController::Base.helpers.content_tag(:span, 'data-mercury' => 'simple') {self.alias}
+        ActionController::Base.helpers.content_tag(:span, {id: "#{self.name}_title", 'data-mercury' => 'simple'}) {self.alias}
       else
         ActionController::Base.helpers.content_tag(
             :div,

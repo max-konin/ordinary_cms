@@ -14,8 +14,10 @@ module OrdinaryCms
     def update
       sections_keys = params[:content].keys - [:undefined]
       sections_keys.each do |key|
-        section = @page.section(key)
-        section.update_attributes content: params[:content][key][:value] unless section.nil?
+        section_name = key.gsub '_title', ''
+        attr = (section_name == key) ? 'content' : 'alias'
+        section = @page.section(section_name)
+        section.update_attributes attr => params[:content][key][:value] unless section.nil?
       end
       render text: ''
     end
