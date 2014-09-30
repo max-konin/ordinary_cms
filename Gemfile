@@ -27,6 +27,7 @@ gem 'mercury-rails',       github: 'jejacks0n/mercury'
 
 gem 'mongoid_acts_as_page'
 gem 'mongoid-paperclip'
+gem 'mongoid_orderable'
 
 group :test do
   gem 'rspec-rails'
