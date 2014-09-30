@@ -1,5 +1,10 @@
 ActiveAdmin.register OrdinaryCms::Page do
 
+
+  config.sort_order = 'position_asc' # assumes you are using 'position' for your acts_as_list column
+  config.paginate   = false # optional; drag-and-drop across pages is not supported
+
+  sortable
   permit_params :name, :factory_id, seo_attributes: [ :id, :title, :description, :keywords ],
                 sections_attributes: [:id, :name, :text, :_destroy]
 
@@ -18,6 +23,7 @@ ActiveAdmin.register OrdinaryCms::Page do
   end
 
   index do
+    sortable_handle_column
     selectable_column
     column :name
     column do |page|

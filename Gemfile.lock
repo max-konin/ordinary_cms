@@ -57,6 +57,8 @@ GEM
       erubis (~> 2.7.0)
       rack (~> 1.5.2)
       rack-test (~> 0.6.2)
+    activeadmin-sortable (0.0.3)
+      activeadmin (>= 0.4)
     activemodel (4.0.8)
       activesupport (= 4.0.8)
       builder (~> 3.1.0)
@@ -244,6 +246,7 @@ PLATFORMS
 DEPENDENCIES
   activeadmin!
   activeadmin-mongoid!
+  activeadmin-sortable
   database_cleaner
   factory_girl_rails
   haml-rails
@@ -252,6 +255,7 @@ DEPENDENCIES
   mercury-rails!
   mongoid-paperclip
   mongoid_acts_as_page
+  mongoid_orderable
   ordinary_cms!
   rails (~> 4.0.1)
   rspec-rails

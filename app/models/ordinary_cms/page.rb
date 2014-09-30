@@ -1,9 +1,12 @@
 module OrdinaryCms
   class Page
     include Mongoid::Document
+    include Mongoid::Orderable
     include ActsAsPage
 
     field :root, type: Boolean, default: false
+    field :position, type: Integer
+    orderable
 
     belongs_to :factory, class_name: 'OrdinaryCms::Factories::Page'
 
