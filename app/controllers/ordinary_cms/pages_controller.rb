@@ -8,7 +8,7 @@ module OrdinaryCms
     before_action ActiveAdmin.application.authentication_method, only: :update
 
     def show
-      smart_render(@page.name)
+      smart_render(@page.slug)
     end
 
     def update
