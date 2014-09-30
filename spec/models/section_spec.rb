@@ -13,7 +13,7 @@ describe OrdinaryCms::Section do
 
     context 'pass :alias' do
       subject {section.render :alias}
-      it {should eq("<span data-mercury=\"simple\">sec</span>")}
+      it {should eq("<span data-mercury=\"simple\" id=\"sec1_title\">sec</span>")}
     end
 
     context 'pass :content' do
