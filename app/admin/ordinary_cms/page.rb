@@ -6,7 +6,7 @@ ActiveAdmin.register OrdinaryCms::Page do
 
   sortable
   permit_params :name, :factory_id, seo_attributes: [ :id, :title, :description, :keywords ],
-                sections_attributes: [:id, :name, :text, :_destroy]
+                sections_attributes: [:id, :name, :alias, :text, :_destroy]
 
   member_action :set_as_root, method: :patch do
     OrdinaryCms::Page.find(params[:id]).set_as_root!
