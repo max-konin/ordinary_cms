@@ -8,7 +8,6 @@ module OrdinaryCms
     before_action ActiveAdmin.application.authentication_method, only: :update
 
     def show
-      @pages = OrdinaryCms::Factories::Page.where(name: 'text_page').first.pages.order('position asc')
       smart_render(@page.slug)
     end
 
