@@ -38,7 +38,7 @@ GIT
 PATH
   remote: .
   specs:
-    ordinary_cms (0.4.1)
+    ordinary_cms (0.4.2)
       haml-rails
       mongoid (>= 4.0.0.beta1)
       mongoid_acts_as_page
