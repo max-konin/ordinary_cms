@@ -27,7 +27,7 @@ gem 'mercury-rails',       github: 'jejacks0n/mercury'
 gem 'activeadmin-sortable'
 
 gem 'mongoid_acts_as_page'
-gem 'mongoid-paperclip'
+gem 'mongoid-paperclip', requere: 'mongoid_paperclip'
 gem 'mongoid_orderable'
 
 group :test do

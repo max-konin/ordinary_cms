@@ -11,7 +11,7 @@ module OrdinaryCms
     belongs_to :factory, class_name: 'OrdinaryCms::Factories::Page'
 
     embeds_many :sections, class_name: 'OrdinaryCms::Section'
-    accepts_nested_attributes_for :sections
+    accepts_nested_attributes_for :sections, allow_destroy: true
 
     def section(name)
       sections.where(name: name).first
